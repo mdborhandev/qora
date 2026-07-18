@@ -1,0 +1,123 @@
+<h2 class="sr-only">Dashboard summarizing Bangladesh digital queue management market research: demand by industry, local and global competitors, and market gaps</h2>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem;">
+  <div style="background:var(--surface-1);border-radius:var(--radius);padding:1rem;">
+    <p style="font-size:13px;color:var(--text-secondary);margin:0 0 4px;">Top wedge</p>
+    <p style="font-size:20px;font-weight:500;margin:0;">Hospitals</p>
+    <p style="font-size:13px;color:var(--text-muted);margin:4px 0 0;">Demand score 9/10</p>
+  </div>
+  <div style="background:var(--surface-1);border-radius:var(--radius);padding:1rem;">
+    <p style="font-size:13px;color:var(--text-secondary);margin:0 0 4px;">Local SaaS competitors</p>
+    <p style="font-size:20px;font-weight:500;margin:0;">0 found</p>
+    <p style="font-size:13px;color:var(--text-muted);margin:4px 0 0;">Only hardware / bespoke</p>
+  </div>
+  <div style="background:var(--surface-1);border-radius:var(--radius);padding:1rem;">
+    <p style="font-size:13px;color:var(--text-secondary);margin:0 0 4px;">Wait time cut</p>
+    <p style="font-size:20px;font-weight:500;margin:0;">3-8h &rarr; 10m</p>
+    <p style="font-size:13px;color:var(--text-muted);margin:4px 0 0;">Manual vs digital, BD hospital study</p>
+  </div>
+</div>
+
+<div style="margin-bottom:2rem;">
+  <p style="font-size:14px;font-weight:500;margin:0 0 0.75rem;">Demand by industry</p>
+  <div style="position:relative;height:340px;">
+    <canvas id="demandChart" role="img" aria-label="Horizontal bar chart of demand scores by industry, hospitals and diagnostics highest at 9 and 8, restaurants lowest at 4">Hospitals 9, Diagnostic centers 8, Government 8, Banks 7, Telecom 6, Utilities 6, Customer service 6, Education 5, Restaurants 4</canvas>
+  </div>
+</div>
+
+<div style="margin-bottom:2rem;">
+  <p style="font-size:14px;font-weight:500;margin:0 0 0.75rem;">Bangladesh players &mdash; all hardware or bespoke, none SaaS</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+    <div class="c-coral" style="border-radius:12px;padding:0.85rem 1rem;">
+      <p class="t" style="font-size:14px;font-weight:500;margin:0;">GCTL Infosys</p>
+      <p class="ts" style="font-size:12px;margin:6px 0 0;">Hardware + integrator, quote-only</p>
+    </div>
+    <div class="c-coral" style="border-radius:12px;padding:0.85rem 1rem;">
+      <p class="t" style="font-size:14px;font-weight:500;margin:0;">Bangla Puzzle</p>
+      <p class="ts" style="font-size:12px;margin:6px 0 0;">Custom software house, project-based</p>
+    </div>
+    <div class="c-coral" style="border-radius:12px;padding:0.85rem 1rem;">
+      <p class="t" style="font-size:14px;font-weight:500;margin:0;">Wavetec (regional)</p>
+      <p class="ts" style="font-size:12px;margin:6px 0 0;">Enterprise hardware, opaque pricing</p>
+    </div>
+    <div class="c-coral" style="border-radius:12px;padding:0.85rem 1rem;">
+      <p class="t" style="font-size:14px;font-weight:500;margin:0;">Easy Solution HMS</p>
+      <p class="ts" style="font-size:12px;margin:6px 0 0;">Queue is a minor module in hospital ERP</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom:2rem;">
+  <p style="font-size:14px;font-weight:500;margin:0 0 0.75rem;">Global SaaS benchmarks vs Bangladesh gap</p>
+  <div style="position:relative;height:260px;">
+    <canvas id="pricingChart" role="img" aria-label="Bar chart of monthly starting price in USD for global queue management SaaS competitors: ScanQueue free tier, Skiplino around 300, Waitwhile around 300, Qminder around 429">ScanQueue free tier, Skiplino ~$300/mo, Waitwhile ~$300/mo, Qminder ~$429/mo</canvas>
+  </div>
+  <p style="font-size:12px;color:var(--text-muted);margin:8px 0 0;">None localize for Bangladesh: no Bangla UI, no bKash/Nagad, no WhatsApp-first design.</p>
+</div>
+
+<div>
+  <p style="font-size:14px;font-weight:500;margin:0 0 0.75rem;">Candidate differentiators for a BD-first product</p>
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    <div style="display:flex;gap:10px;align-items:flex-start;border:0.5px solid var(--border);border-radius:var(--radius);padding:0.65rem 0.85rem;">
+      <i class="ti ti-brand-whatsapp" style="font-size:18px;color:var(--text-accent);margin-top:1px;" aria-hidden="true"></i>
+      <div><p style="font-size:13px;font-weight:500;margin:0;">WhatsApp-first notifications</p><p style="font-size:12px;color:var(--text-secondary);margin:2px 0 0;">Free for the customer, high BD penetration</p></div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:flex-start;border:0.5px solid var(--border);border-radius:var(--radius);padding:0.65rem 0.85rem;">
+      <i class="ti ti-currency-taka" style="font-size:18px;color:var(--text-accent);margin-top:1px;" aria-hidden="true"></i>
+      <div><p style="font-size:13px;font-weight:500;margin:0;">bKash / Nagad native billing</p><p style="font-size:12px;color:var(--text-secondary);margin:2px 0 0;">BDT, pay-as-you-grow, no card required</p></div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:flex-start;border:0.5px solid var(--border);border-radius:var(--radius);padding:0.65rem 0.85rem;">
+      <i class="ti ti-language" style="font-size:18px;color:var(--text-accent);margin-top:1px;" aria-hidden="true"></i>
+      <div><p style="font-size:13px;font-weight:500;margin:0;">Bangla-language displays and voice</p><p style="font-size:12px;color:var(--text-secondary);margin:2px 0 0;">No competitor, local or global, offers this</p></div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:flex-start;border:0.5px solid var(--border);border-radius:var(--radius);padding:0.65rem 0.85rem;">
+      <i class="ti ti-device-tv" style="font-size:18px;color:var(--text-accent);margin-top:1px;" aria-hidden="true"></i>
+      <div><p style="font-size:13px;font-weight:500;margin:0;">No proprietary hardware</p><p style="font-size:12px;color:var(--text-secondary);margin:2px 0 0;">Any Android TV, browser, or tablet</p></div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:flex-start;border:0.5px solid var(--border);border-radius:var(--radius);padding:0.65rem 0.85rem;">
+      <i class="ti ti-tag" style="font-size:18px;color:var(--text-accent);margin-top:1px;" aria-hidden="true"></i>
+      <div><p style="font-size:13px;font-weight:500;margin:0;">Transparent published pricing</p><p style="font-size:12px;color:var(--text-secondary);margin:2px 0 0;">Self-serve signup, no sales-call gate</p></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const muted = getComputedStyle(document.documentElement).getPropertyValue('--text-muted').trim() || '#898781';
+const grid = matchMedia('(prefers-color-scheme: dark)').matches ? '#2c2c2a' : '#e1e0d9';
+
+new Chart(document.getElementById('demandChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Hospitals','Diagnostic centers','Government','Banks / NBFIs','Telecom care','Utilities','Customer service','Education','Restaurants'],
+    datasets: [{ data: [9,8,8,7,6,6,6,5,4], backgroundColor: '#2a78d6', borderRadius: 4, maxBarThickness: 20 }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { min:0, max:10, ticks:{ color: muted, stepSize: 2 }, grid: { color: grid } },
+      y: { ticks: { color: muted }, grid: { display: false } }
+    }
+  }
+});
+
+new Chart(document.getElementById('pricingChart'), {
+  type: 'bar',
+  data: {
+    labels: ['ScanQueue','Skiplino','Waitwhile','Qminder'],
+    datasets: [{ data: [0,300,300,429], backgroundColor: '#1baf7a', borderRadius: 4, maxBarThickness: 40 }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { ticks:{ color: muted, callback: v => '$' + v }, grid: { color: grid } },
+      x: { ticks: { color: muted }, grid: { display: false } }
+    }
+  }
+});
+</script>
