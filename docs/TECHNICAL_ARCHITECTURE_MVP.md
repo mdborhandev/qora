@@ -85,11 +85,12 @@ Qora is a cloud-based, multi-tenant Digital Queue Management System (DQMS) targe
 | Component | Technology | Rationale |
 |-----------|-----------|-----------|
 | Framework | React 18+ | Component-based, large ecosystem, SignalR client support |
-| Styling | TailwindCSS | Utility-first, fast prototyping, small bundle |
+| Styling | Bootstrap 5 + React-Bootstrap | Mature component library, responsive grid, extensive pre-built components |
 | State Management | Zustand | Lightweight, no boilerplate, works well with SignalR |
 | Router | React Router v6 | Standard SPA routing |
 | i18n | react-i18next | Key-value translation, namespace splitting, interpolation |
 | HTTP Client | Axios | Interceptors for auth token refresh, request/response logging |
+| Tables | Tabulator (react-tabulator) | Feature-rich data tables with sorting, filtering, pagination, export |
 | Charts | Recharts | Lightweight, composable, React-native |
 | Forms | React Hook Form + Zod | Minimal re-renders, schema-based validation |
 
@@ -346,7 +347,6 @@ qora/
 │   │   ├── utils/                          # Utility functions
 │   │   └── App.tsx
 │   ├── public/
-│   ├── tailwind.config.js
 │   ├── vite.config.ts
 │   └── package.json
 │
